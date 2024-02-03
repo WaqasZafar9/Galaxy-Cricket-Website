@@ -46,7 +46,7 @@ To set up the Galaxy Cricket website locally, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/galaxy-cricket.git
+   [git clone https://github.com/WaqasZafar9/Galaxy-Cricket-Website.git]
 ## Development Setup
 
 1. **Set up a local development environment with a web server and PHP support.**
