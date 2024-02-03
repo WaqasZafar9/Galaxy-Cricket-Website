@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap");
+* {
+  font-family: "poppins", sans-serif;
+}
+body
+{
+	margin: 0 auto;
+	padding: 0 auto;
+	height: 100vh;
+	background: linear-gradient(45deg,#FC354C, #0ABFBC);
+	background-size: cover;
+	font-family: sans-serif;
+}
+.wrapper{
+    background: linear-gradient(45deg,#FC354C, #0ABFBC);
+    padding: 0 20px 0 20px;
+    font-family: sans-serif;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.row{
+    width: 900px;
+    height: 550px;
+    border-radius: 10px;
+    background: linear-gradient(45deg,#FC354C, #0ABFBC);
+    box-shadow: 5px 5px 10px 1px rgba(0,0,0,0.2);
+}
+.side-image{
+    background-image: url('ICC.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 10px 0 0 10px;
+}
+
+img{
+    width: 100px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+.text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+i{
+    font-weight: 400;
+    font-size: 15px;
+}
+.right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.input-box{
+    width: 330px;
+    box-sizing: border-box;
+}
+.input-box header{
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 45px;
+}
+.input-field{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 0 10px 0 10px;
+}
+.input{
+    height: 45px;
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    outline: none;
+    margin-bottom: 20px;
+    color: #40414a;
+}
+.input-box .input-field label{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    pointer-events: none;
+    transition: .5s;
+}
+.input-field .input:focus ~ label{
+    top: -10px;
+    font-size: 13px;
+}
+.input-field .input:valid ~ label{
+    top: -10px;
+    font-size: 13px;
+    color: #5d5076;
+}
+.input-field .input:focus, .input-field .input:valid{
+    border-bottom: 1px solid #743ae1;
+}
+.submit{
+    border: none;
+    outline: none;
+    height: 45px;
+    background: #ececec;
+    border-radius: 5px;
+    transition: .4s;
+}
+.submit:hover{
+    background: rgba(105, 224, 35, 0.9);
+    color: #fff;
+}
+.signin{
+    text-align: center;
+    font-size: small;
+    margin-top: 25px;
+}
+span a{
+    text-decoration: none;
+    font-weight: 700;
+    color: #000;
+    transition: .5s;
+}
+span a:hover{
+    text-decoration: underline;
+    color: #42ec0e;
+}
+
+.signup h5
+{
+	margin: 0;
+	padding: 15px 0 0 0;
+	text-align: center;
+	color: #000000;
+}
+.signup h4
+{
+	margin: 0;
+	padding: 30px;
+	text-align: center;
+	color: #fff;
+}
+.signup h4 a
+{
+	text-decoration: none;
+	color: #BE5869;
+}
+ul
+{
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+ul li
+{
+	list-style: none;
+	float: left;
+	top: 10px;
+	left: 65px;
+	margin: 10px;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	background: #fff;
+	font-size: 40px;
+	border-radius: 20%;
+	position: relative;
+	transition: .5s ease-in-out;
+	z-index: 1;
+}
+ul li a
+{
+	font-size: 35px;
+}
+ul li .facebook
+{
+	color: #3b5999; 
+}
+
+ul li .google
+{
+	color: #dd4b39;
+}
+
+ul li a:before
+{
+	content: '';
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 20%;
+	transform: scale(0);
+	transition: .5s ease-in-out;
+	z-index: -1;
+}
+ul li a:before
+{
+	background:linear-gradient(45deg,#FC354C, #0ABFBC); 
+}
+ul li a:hover:before
+{
+	transform: scale(.9);
+}
+ul li a:hover
+{
+	color: #fff;
+}
+@media only screen and (max-width: 768px){
+    .side-image{
+        border-radius: 10px 10px 0 0;
+    }
+    img{
+        width: 35px;
+        position: absolute;
+        top: 20px;
+        left: 47%;
+    }
+    .text{
+        position: absolute;
+        top: 70%;
+        text-align: center;
+    }
+    .text p,i{
+        font-size: 17px;
+    }
+    .row{
+        max-width: 420px;
+        width: 100%;
+    }
+}
